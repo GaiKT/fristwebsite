@@ -1,0 +1,486 @@
+
+body{
+    font-family: Arial;
+    font-weight:lighter;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar{
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333;
+    color: #fff;
+    height: 70px;
+    top:0;
+    z-index: 1;
+}
+.logo{
+    position:static;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+}
+ul{
+    position: absolute;
+    width: 100%;
+    display:flex;
+    list-style: none;
+    width: 350px; 
+    right: 150px;
+    top: 10px;
+}
+ul li {          
+    margin: 0 1rem;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    height: 5px;
+    background-image:linear-gradient(to right,#f3f9f9,#0be3f7);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:25% ;
+    transition: .4s;
+}
+ul li a:hover::after{
+    width: 50%;
+    opacity: 1;
+}
+/* navbar */
+
+/* header */
+.header-1{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 221, 239);
+    border-radius:15px; 
+}
+.header-info{
+    width: 550px;
+    text-align: center;
+    height: 200px;
+}
+.header-info a {
+    background-color: #0a0b0b;
+    color: #fff;
+    padding:  0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: .4s;
+}
+.header-info a:hover{
+    background: #fff;
+    color: #000;
+}
+.team{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align: center;
+    height: 500px;
+
+}
+.box,.box2,.box3{
+    margin-top: 50px;
+    height: 300px;
+    padding: 15px;
+
+    
+}
+
+.box img {
+    padding: 15px;
+    width: 130px; 
+    opacity: 0.75; 
+    transition: .4s;
+
+}
+.box img:hover{
+    opacity: 1;
+    transform:translateY(-10px);
+    background-color: #7aedf897;
+    border-radius: 15%;
+}
+.box2 img {
+    width: 155px;
+    opacity: 0.75;
+    transition: .4s;
+}
+.box2 img:hover{
+    opacity: 1;
+    transform:translateY(-10px);
+    background-color: #7aedf897;
+    border-radius: 15%;
+}
+
+.box3 img{
+    width: 135px;
+    padding: 10px;
+    opacity: 0.75;
+    transition: .4s;   
+}
+.box3 img:hover{
+    opacity: 1;
+    transform:translateY(-10px);
+    background-color: #7aedf897;
+    border-radius: 100%;
+
+}
+.head2 {
+    padding: 15px;
+    height: 35px;
+    background-color: rgb(160, 221, 239);
+    color: rgb(6, 6, 6);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+/* header */
+
+/* footer */
+.ft{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+.ft p {
+    padding: 0 30rem;
+    color: rgb(122, 121, 121);
+}
+.ft .social{
+    padding-top: 10px;
+}
+.ft .social a{
+    position: relative;
+    color: #000;
+    font-size: 24px;
+    margin:  0 0.5rem;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+.ft .social a:hover{
+    opacity: 1;
+}
+/* footer */
+/* Calculator */
+.headline {
+    background-color: #fff;
+    margin-left: 20px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    margin-top: 20px;
+
+}
+.line {
+    border: solid rgba(1, 1, 26, 0.355);
+    margin: 2rem 120px;
+    border-radius: 15%;
+    height: fit-content;
+
+}
+header{
+    background-image:linear-gradient(to right,#f6f8f8,#85edf6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+.Bodybox-info{ 
+    display:block;
+    align-items: center;
+    padding: 20px;
+    background-color: #282b2b;
+    border-radius: 15px;
+    width: 400px;
+    height: 550px;
+    border: solid rgb(0, 0, 0);
+    box-shadow: 5px 5px #282b2b85;
+}
+.Bodybox-info h1{
+    margin: 0;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 32px;
+}
+h2{
+    font-size: 20px;
+    background-color: #fff;
+    margin: 7px;
+}
+.inbox .calculatornumber {
+    margin-top: 70px;
+}
+.inbox{
+    margin-top: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+.home{
+    display: flex;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 4px 200px;
+    background-color: #0a0b0b;     
+}
+.inbox p
+{
+    box-sizing: border-box;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px 10px;
+    background-color: #0a0b0b;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 60px;
+
+}
+.inbox input{
+    border-radius: 5px;
+    height: 30px; 
+    width: 80px;
+    font-size: 25px;
+    background-color: rgb(102, 98, 98);
+    color: #fff;
+}
+.inbox select{
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 25px;
+    background-color: rgb(102, 98, 98);
+    color: #fff;
+    cursor: pointer;
+}
+#buttoncal{
+    transition: 0.4s;
+}
+#buttoncal:hover{
+    transform: translateY(-3px);
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+/* Calculator */
+/* Calculator Percent */
+.body-web {
+    border:solid rgb(73, 67, 67);
+    text-align: center;
+    margin: 10px 50px;
+    height: 650px;
+    border-radius: 15px;
+    border-width: 2px;
+    
+}
+.body-web h1{
+    border:solid rgba(35, 33, 33, 0.649);
+    margin: 20px 20rem;
+    border-radius: 15px;
+}
+.box1{
+    border:solid rgb(0, 0, 0);
+    border: 0.5px;
+    display: inline-block;
+    height: 380px;
+    width: 350px;
+    margin : 50px 10px;
+    padding-top: 20px;
+    background-color: rgba(9, 127, 154, 0.632);
+    box-shadow: 10px 10px #0be3f744;
+    border-radius: 5px;
+}
+.submit{
+    border: solid rgb(255, 255, 255);
+    margin-top: 10px; 
+    height: 30px;
+    width: 60px;
+    border-radius:  15px;
+    cursor: pointer;
+    box-shadow: #0a0b0b 2px 2px;
+    transition: 0.2s;
+}
+.submit:hover {
+    transform: translateY(2px);
+    opacity: 0.75;
+}
+.box1 p {
+    border:none;
+    display: flex;
+    height: 80px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-left : 115px;
+    font-size: 25px;
+    margin-top: 0; 
+    background-color: #fff;
+    border-radius: 15px;
+}
+.box1 input{
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+.box1 h2{
+    border-radius: 15px;
+    margin-bottom: 0;
+    background: none;
+}
+/* Calculator Percent */
+
+.calculatearea{
+    margin: 0 5rem;
+    background-image:linear-gradient(to right,#f6f8f8,#85edf6);
+    border-radius: 15px;
+    text-align: center;
+    height: 90vh;
+    box-sizing: border-box;
+
+}
+.calculate_header{
+    margin: 10px 25rem;
+    border-radius: 15px;
+    font-size: 32px;
+
+}
+.calculatebox{
+    border: solid black;
+    display: inline-block;
+    width: 900px;
+    height: 550px;
+    padding-top: 80px;
+    background: rgba(9, 150, 178, 0.805);
+    position: relative;
+    box-shadow: 10px 10px #02161783;
+    border-radius: 15px;
+    border-width: 0.5px;
+
+       
+}
+.calculatebox h4 {
+    font-size: 28px;
+    border: solid black;
+    margin: 0 250px ;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border-style:dashed;
+    border-width: 0.5px;
+}
+.calculatebox select {
+    height: 50px;
+    width: 190px;   
+}
+.calculatebox input {
+    height: 50px;
+    width: 80px;
+    margin: 0 15px;
+}
+
+.calculatebox h5 {
+    position: absolute;
+}
+
+#numberi,#numberii,#numberiii,#calculate {
+    margin-top: 50px;
+}
+
+#headnum1 {
+    left: 310px;
+    top: 205px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}
+#headnum2 {
+    left: 430px;
+    top: 205px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}
+
+#anser {
+    position: absolute;
+    left :40%;
+    top: 430px;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #39505092;
+    border-radius: 15px;
+    font-size: 24px;
+    color: #230bf7;
+    font-weight: bold;
+
+}
+#headanser {
+    position: absolute;
+    left: 45%;
+    top: 365px;
+    font-size: 24px ;
+}
+.calculate {
+    border-radius: 15px;
+    height: 50px;
+    width: 80px;
+    box-shadow: 3px 3px #282b2b98;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.calculate:hover{
+    transform: translateY(-5px);
+    opacity: 0.75;
+    cursor: pointer;
+}
+.calculatebox select{
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+#numberi,#numberii{
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+

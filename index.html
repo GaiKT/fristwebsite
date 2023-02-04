@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>คำนวณดอทคอม</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section class="navbar">
+            <div class="logo">
+                <h1> คำนวณดอทคอม </h1>
+            </div>
+            <ul>
+                <li><a href="">หน้าแรก</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <li><a href="#">เกี่ยวกับ</a></li>
+            </ul>
+
+        </section>
+        
+        <header class="header-1">
+            <div class="header-info">
+                <h1>ยินดีต้อนรับ</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repellat quidem labore distinctio voluptates sunt quas culpa aperiam eaque aliquam, sed repudiandae consequuntur aliquid adipisci. A voluptatibus, deserunt cupiditate suscipit repellat excepturi reiciendis veritatis dolor architecto maxime iusto accusantium possimus.</p>
+                <a href="#" class="header-btn">more</a>
+            </div>
+        </header>
+        <h2 class="headline"> Function </h2>
+        <div class="line"></div>
+        <section class="team">
+            <div class="box">
+                <h2 class="head2">เครื่องคิดเลข</h2>
+                <a href="#calculator_page">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2838/2838862.png" alt="">
+                </a>
+            </div>
+            <div class="box3">
+                <h2 class="head2">คิดเปอร์เซ็นต์</h2>
+                <a href="#calculatorpercent_page">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/percent-icon.png" alt="">
+                </a>    
+            </div>
+            <div class="box2">
+                <h2 class="head2">คำนวณพื้นที่</h2>
+                <a href="#calculatorarea_page">
+                    <img src="img/geometric-shape.png" alt="">
+                </a>    
+            </div>
+        </section>
+
+        <h2 id="calculator_page" class="headline"> Calcilator </h2>
+        <div class="line"></div>
+
+        <!-- Calculator -->
+
+        <header>
+            <div class="Bodybox-info">
+                <h1>เครื่องคิดเลข</h1>
+                <div class="inbox">
+                    <h2 class="calculatornumber">ใส่ตัวเลขที่คุณต้องการ: </h2>
+                    <input type="number" value="" id="num1"><br>
+                    <h2>ใส่ตัวเลขที่คุณต้องการ: </h2>
+                    <input type="number" value="" id="num2"><br>
+                    <h2>เลือกเครื่องมือของคุณ: </h2>
+                    <select id="operlator">
+                        <option value="1">บวก</option>
+                        <option value="2">ลบ</option>
+                        <option value="3">คูณ</option>
+                        <option value="4">หาร</option>
+                    </select>
+                    <input id="buttoncal" type="button" value="=" onclick="cal()"><br>
+                    <h2>คำตอบคือ: </h2> 
+                    <p id ="result">0</p>
+                </div>  
+                <div class="home"></div>  
+            </div>
+        </header>
+
+        <!-- Calculator -->
+
+        <h2 id="calculatorpercent_page" class="headline"> Calculate percent </h2>
+        <div class="line"></div>
+
+        <!-- Calculator Percent -->
+
+        
+        <div class="body-web">
+            <h1 class="head">การคำนวณเปอร์เซนต์</h1>
+            <div class="box1">
+                <h2>หาราคาส่วนลด</h2>
+                <h3 id="X">ราคาเต็ม(บาท): </h3>
+                <input type="number" value="" id="num11"><br>
+                <h3 id="Y">จำนวนส่วนลด(%): </h3>
+                <input type="number" value="" id="num12"><br>
+                <input class="submit" type="button" value="=" onclick="cal_Percent()"><br>
+                <h2>คำตอบคือ </h2> 
+                <p id ="result1">NaN</p>
+            </div>
+    
+            <div class="box1">
+                <h2>หาราคาที่ต้องจ่ายหลังจากลดแล้ว</h2>
+                <h3 id="X">ราคาเต็ม(บาท):</h3>
+                <input type="number" value="" id="num21"><br>
+                <h3 id="Y">จำนวนส่วนลด(%):</h3>
+                <input type="number" value="" id="num22"><br>
+                <input class="submit" type="button" value="=" onclick="cal_Percent()"><br>
+                <h2>คำตอบคือ </h2> 
+                <p id ="result2">NaN</p>
+            </div>
+    
+            <div class="box1">
+                <h2>หาว่าลดไปกี่เปอร์เซนต์</h2>
+                <h3 id="X">ราคาส่วนลด(บาท): </h3>
+                <input type="number" value="" id="num31"><br>
+                <h3 id="Y">ราคาเต็ม(บาท): </h3>
+                <input type="number" value="" id="num32"><br>
+                <input class="submit" type="button" value="=" onclick="cal_Percent()"><br>
+                <h2>คำตอบคือ </h2> 
+                <p id ="result3">NaN</p>
+            </div>
+        </div>
+
+        <!-- Calculator Percent -->
+        <h2 id="calculatorarea_page" class="headline"> Calculate Area </h2>
+        <div class="line"></div>
+        <!-- Calculator Area -->
+        <div class="calculatearea">
+            <h2 class="calculate_header">คำนวณพื้นที่ต่างๆ</h2>
+            <div class="calculatebox">
+                <h4>เลือกเครื่องมือของคุณ</h4>
+                <select id="tool"> 
+                    <option value="1">หาพื้นที่สี่เหลี่ยมจัตุรัส</option>
+                    <option value="2">หาพื้นที่สี่เหลี่ยมผืนผ้า</option>
+                    <option value="3">หาพื้นที่สามเหลี่ยม</option>
+                    <option value="4">หาพื้นที่สี่เหลี่ยมขนมเปียกปูน</option>
+                    <option value="5">หาพื้นที่สี่เหลี่ยมด้านขนาน</option>
+                    <option value="6">หาพื้นที่วงกลม</option>
+                </select>
+                <input class="calculate" type="button" value="OK" onclick="edit_Area()" ><br>
+                <h5 id="headnum1">ด้าน:</h5>
+                <input type="number" value="" id="numberi">
+                <h5 id="headnum2">ด้าน:</h5>
+                <input type="number" value="" id="numberii">
+                <input class="calculate" type="button" value="คำนวณ" onclick="cal_Area()">
+                <h5 id="headanser">คำตอบคือ: </h5>
+                <p id="anser">0</p>
+            </div>
+        </div>
+        
+
+        <script src="main.js"></script>
+        <footer>
+            <div class="ft">
+                <p> copyright 2022</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+        </footer>   
+   
+    </body>
+</html>
